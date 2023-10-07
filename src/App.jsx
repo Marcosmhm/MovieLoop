@@ -11,6 +11,7 @@ import Search from "./pages/Search"
 import Layout from "../components/Layout"
 import AuthRequired from "./pages/UserPages/AuthRequired"
 import UserFavorites, { loader as favoritesLoader } from "./pages/UserPages/UserFavorites"
+import NotFound from "./pages/NotFound"
 import { ToastContainer } from "react-toastify"
 
 import "./assets/css/app.css"
@@ -31,7 +32,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route element={<AuthRequired />}>
       <Route path="/favorites" element={<UserFavorites />} loader={favoritesLoader} />
     </Route>
-    <Route path="*" element="404" />
+    <Route path="*" element={<NotFound />} />
   </Route>
 ))
 

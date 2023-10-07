@@ -57,7 +57,6 @@ a {
   align-self: center;
 }
 
-
 /* Hero */
 .media-hero-container {
   display: flex;
@@ -227,6 +226,20 @@ footer a {
 
 .personal-links a {
   border-bottom: 1px solid gray;
+}
+
+
+/* 404 */
+.not-found-container {
+  margin-top: 15%;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.not-found-button {
+  width: fit-content;
+  margin-top: 1em;
 }
 
 @media (min-width: 640px) {
