@@ -46,9 +46,29 @@ MovieLoop is a React-based website that allows the user to search for movies by 
 * ![HTML][html]
 * ![CSS][css]
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
+### Installation
+
+1. Get an API key at https://developer.themoviedb.org/docs
+2. Clone or download the repo
+  ```sh
+  git clone https://github.com/Marcosmhm/MovieLoop
+  ```
+3. Install NPM packages
+  ```sh
+  npm i or npm install
+  ```
+4. Enter your API key in a .env file in the root of the project
+  ```js
+    VITE_TMDB_KEY='YOUR_API_KEY'
+  ```
+5. Run the project with npm run dev
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
