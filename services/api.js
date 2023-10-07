@@ -300,7 +300,6 @@ export async function getUserFavorites(sessionId, type) {
       }
     } 
     const data = await res.json()
-    console.log('api', data.results)
     return data.results
 
   } catch (e) {
