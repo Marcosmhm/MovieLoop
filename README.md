@@ -76,6 +76,9 @@ MovieLoop is a React-based website that allows the user to search for movies by 
 * [Img Shields](https://shields.io)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 * [TMDB API][TMDB-url]
+* [Swiper](https://swiperjs.com)
+* [react-player](https://github.com/CookPete/react-player)
+* [react-toastify](https://fkhadra.github.io/react-toastify/introduction)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
