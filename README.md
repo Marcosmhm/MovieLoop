@@ -1,7 +1,9 @@
 <a name="readme-top"></a>
 
 
-<a align="center" href="https://movie-loop.netlify.app/">Live Demo</a>
+<p align="center">
+  <a href="https://movie-loop.netlify.app/">Live Demo</a>
+</p>
 
 
 <!-- TABLE OF CONTENTS -->
