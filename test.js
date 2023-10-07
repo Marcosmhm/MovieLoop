@@ -1,1 +1,0 @@
--e "const weathe-api = 'apiKey';\n\export default weathe-api;" 
