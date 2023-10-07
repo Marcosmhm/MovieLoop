@@ -41,6 +41,7 @@ function App() {
     <>
       <RouterProvider router={router} />
       <ToastContainer
+        className={'toast-style'}
         position="top-center"
         autoClose={3000}
         hideProgressBar={false}
