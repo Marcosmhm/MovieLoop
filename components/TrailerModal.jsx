@@ -8,6 +8,7 @@ export default function modal({ onClose, videoUrl }) {
       },
     }
   };
+  
   return (
     <div className="modal">
       <div className="modal-content">
