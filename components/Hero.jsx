@@ -1,12 +1,11 @@
 import { useState } from "react"
 import { AiOutlinePlayCircle } from 'react-icons/ai'
-
-import TrailerModal from './TrailerModal'
-import Stars from "./Stars"
 import { Link } from "react-router-dom"
 
-export default function Hero({ image, title, rating, reviews, airDate, seasons, overview, link, url }) {
+import Stars from "./Stars"
+import TrailerModal from './TrailerModal'
 
+export default function Hero({ ...props }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   function handleWatchTrailerClick() {
@@ -22,35 +21,35 @@ export default function Hero({ image, title, rating, reviews, airDate, seasons, 
   return (
     <>
       <section className="media-hero-container">
-        <Link to={link} style={{ display: 'contents' }}>
+        <Link to={props.link} style={{ display: 'contents' }}>
           <div className="img-container">
             <img
-              src={image}
+              src={props.image}
               className="hero-poster"
             />
           </div>
         </Link>
         <div className="hero-info">
-          <Link to={link} style={{ display: 'contents' }}>
-            <h1>{title}</h1>
+          <Link to={props.link} style={{ display: 'contents' }}>
+            <h1>{props.title}</h1>
             <div className="hero-container-info-container">
               <div className="hero-rating">
                 <Stars
-                  rating={rating}
-                  reviews={reviews}
+                  rating={props.rating}
+                  reviews={props.reviews}
                 />
               </div>
               <div className="hero-media-info">
                 <span className="hero-media-date">
-                  {airDate}
+                  {props.airDate}
                 </span>
                 <span>
-                  {seasons}
+                  {props.seasons}
                 </span>
               </div>
             </div>
             <p className="hero-media-overview">
-              {overview}
+              {props.overview}
             </p>
           </Link>
           <button onClick={handleWatchTrailerClick} className="hero-button">
@@ -61,7 +60,7 @@ export default function Hero({ image, title, rating, reviews, airDate, seasons, 
       {isModalOpen && (
         <TrailerModal
           onClose={handleCloseModal}
-          videoUrl={`https://www.youtube.com/watch?v=${url}`} />
+          videoUrl={`https://www.youtube.com/watch?v=${props.url}`} />
       )}
     </>
   )

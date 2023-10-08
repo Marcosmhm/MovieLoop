@@ -55,16 +55,13 @@ select {
   padding: 1em;
 }
 
-.a {
-  height: fit-content;
-}
 
-.person-credits-job {
+.person-credits-info {
   display: none;
-  color: #80868b;
+  color: azure;
 }
 
-.a span {
+.person-credits-card span {
   padding-top: 150%;
   width: 100%;
   height: 0;
@@ -90,6 +87,19 @@ select {
 .person-social-svg {
   fill: white;
   height: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .person-credits-info {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  } 
+
+  .person-credits-card {
+    margin-bottom: 1em;
+  }
 }
 
 @media (min-width: 1024px) {
