@@ -59,6 +59,7 @@ select {
 .person-credits-info {
   display: none;
   color: azure;
+  font-size: 0.9rem;
 }
 
 .person-credits-card span {
@@ -97,8 +98,12 @@ select {
     overflow: hidden;
   } 
 
+  .person-credits-job {
+    color: #80868b;
+  }
+
   .person-credits-card {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 }
 
