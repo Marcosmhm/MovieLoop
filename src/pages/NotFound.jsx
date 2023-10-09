@@ -7,11 +7,11 @@ export default function notFound() {
         <h1>404</h1>
         <h2>This page could not be found!</h2>
         <h3>Sorry, but the page you are looking for does not exist</h3>
-        <button className="not-found-button">
-          <Link to='/'>
+        <Link to='/'>
+          <button className="not-found-button">
             Go Back
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </>
   )
