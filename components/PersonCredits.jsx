@@ -34,9 +34,9 @@ export default function PersonCredits({ handleFilterChange, selectedFilter, ...p
               {item.name || item.title}
             </span>
             <br />
-            <Stars rating={item.vote_average?.toFixed(2) / 2} />
+            <Stars rating={(item.vote_average?.toFixed(2) / 2).toFixed(2)} />
             <span className="slider-item-reviews-vote">
-              {item.vote_average?.toFixed(2) / 2}
+              {(item.vote_average?.toFixed(2) / 2).toFixed(2)}
             </span>
             <br />
             <span className="person-credits-job">
