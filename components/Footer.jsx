@@ -10,7 +10,7 @@ export default function Footer() {
         <span className='personal-links'>
           <a href="https://www.linkedin.com/in/marcoshenriquem/" target="_blank"><BsLinkedin /></a>
           <a href="https://github.com/Marcosmhm" target="_blank"><BsGithub /></a>
-          </span>
+        </span>
       </footer>
     </>
   )

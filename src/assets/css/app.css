@@ -196,7 +196,11 @@ a>span {
 
 .slider-item:hover {
   -webkit-transform: scale(.9);
-	transform: scale(.9);
+	transform: scale(0.95);
+}
+
+.slider-item:active {
+  scale: 1;
 }
 
 .slider-item-info {

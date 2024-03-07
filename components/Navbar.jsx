@@ -25,7 +25,7 @@ export default function Sidebar() {
   const handleLoginClick = async () => {
     const loginToken = await getToken();
     if (loginToken)
-      window.location.href = `https://www.themoviedb.org/authenticate/${loginToken}?redirect_to=http://localhost:5173/favorites`;
+      window.location.href = `https://www.themoviedb.org/authenticate/${loginToken}?redirect_to=https://movie-loop.netlify.app/favorites`;
   };
 
   const handleLogoutClick = async () => {

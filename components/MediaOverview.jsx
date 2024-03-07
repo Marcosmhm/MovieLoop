@@ -67,15 +67,20 @@ export default function Overview({ media }) {
     media['watch/providers'].results.US?.buy ? usProviders = [...media['watch/providers'].results.US.buy] : usProviders
     media['watch/providers'].results.US?.rent ? usProviders = [...media['watch/providers'].results.US.rent] : usProviders
     media['watch/providers'].results.US?.flatrate ? usProviders = [...media['watch/providers'].results.US.flatrate] : usProviders
-    renderAvailableAt = usProviders?.map((provider, index) => {
-      return (
-        <>
-          <img key={`provider-${index}`} src={`https://image.tmdb.org/t/p/original/${provider.logo_path}`}
-            className="company-logo"
-          />
-        </>
-      )
-    })
+    media['watch/providers'].results.US?.fast ? usProviders = [...media['watch/providers'].results.US.fast] : usProviders
+    if (usProviders) {
+      renderAvailableAt = usProviders?.map((provider, index) => {
+        return (
+          <>
+            <img
+              key={`provider-${index}`}
+              src={`https://image.tmdb.org/t/p/original/${provider.logo_path}`}
+              className="company-logo"
+            />
+          </>
+        );
+      });
+    }
   }
 
   return (
